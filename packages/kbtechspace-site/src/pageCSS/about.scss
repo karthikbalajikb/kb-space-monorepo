@@ -1,0 +1,28 @@
+.kbts-page-about {
+  display: grid;
+
+  &-ribbon {
+    margin: auto;
+  }
+
+  &-service {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 4%;
+    padding: 7%;
+  }
+
+  &-work-progress {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .kbts-page-about-service {
+    grid-template-columns: auto;
+    grid-row-gap: 40px;
+  }
+}

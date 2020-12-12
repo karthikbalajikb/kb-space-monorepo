@@ -1,0 +1,53 @@
+.kbts-slider {
+    padding-top: 1em;
+
+  &-title{
+    margin: 0 0 4px 0;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    position: relative;
+    z-index: 100;
+    padding-left: 0px;
+    text-align: start;
+    color: var(--on-surface-main);
+  }
+
+  &-bar{
+    position: relative;
+    width: 100%;
+    height: 14px;
+    box-shadow: var(--box-shadow-sm);
+    border-radius: var(--border-radius-default);
+
+    &-progress{
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 100%;
+      height: 8px;
+      background-color: var(--primary-dark);
+      border-radius: var(--border-radius-default);
+      transition: width 1s ease-out;
+    }
+
+    &-value{
+      position: absolute;
+      top: -19px;
+      left: 100%;
+      margin-left: -2px;
+      font-size: 13px;
+      font-weight: bold;
+      text-align: center;
+      width: 42px;
+      line-height: 42px;
+      color: var(--on-surface-main);
+      padding: 0 6px;
+      background: var(--surface-main);
+      border-radius: var(--border-radius-rounded);
+      box-shadow: var(--box-shadow-sm);
+    }
+  }
+
+}

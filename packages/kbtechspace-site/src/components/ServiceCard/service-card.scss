@@ -1,0 +1,29 @@
+.kbts-servicecard {
+  display: grid;
+  box-shadow: var(--box-shadow-md);
+  border-radius: var(--border-radius-lg);
+  padding: 20px;
+  height: 300px;
+
+  &-img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+
+  &-title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.24px;
+    color: var(--on-surface-main);
+  }
+
+  &-desc {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.45;
+    color: var(--on-surface-light);
+  }
+}

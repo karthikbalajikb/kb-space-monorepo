@@ -1,0 +1,134 @@
+@import '../../../assets/fontawesome/scss/fontawesome.scss';
+$fa-font-path: '../../../assets/fontawesome/webfonts';
+
+@import '../../../assets/fontawesome/scss/fa-solid.scss';
+@import '../../../assets/fontawesome/scss/fa-brands.scss';
+
+.sideMenuContent {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-content: baseline;
+  justify-content: center;
+
+  @media(max-width: 760px) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    margin: 60px 30px;
+  }
+}
+
+.sideMenuContent-item {
+  @include fa-icon;
+
+  display: grid;
+  justify-content: space-evenly;
+  font-size: 11px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 14%;
+  text-align: center;
+  box-shadow: var(--box-shadow-sm);
+  background-color: var(--surface-main);
+  margin-top: 25px;
+  border-radius: var(--border-radius-default);
+
+  &-home,
+  &-about,
+  &-blog,
+  &-resume,
+  &-dashboard,
+  &-apps-built {
+    display: grid;
+    text-decoration: none;
+    color: var(--on-surface-main);
+    width: 108px;
+
+    &.active {
+      color: var(--secondary-main);
+    }
+
+    @media(max-width: 760px) {
+      width: 100%;
+    }
+  }
+
+  &-home-icon,
+  &-about-icon,
+  &-blog-icon,
+  &-resume-icon,
+  &-dashboard-icon,
+  &-apps-built-icon {
+    @extend .fas;
+    padding-bottom: 4px;
+    font-size: large;
+  }
+
+  &-home-icon:before {
+    content: fa-content($fa-var-home);
+  }
+  &-about-icon:before {
+    content: fa-content($fa-var-user-secret);
+  }
+  &-blog-icon:before {
+    content: fa-content($fa-var-newspaper);
+  }
+  &-resume-icon:before {
+    content: fa-content($fa-var-id-card-alt);
+  }
+  &-dashboard-icon:before {
+    content: fa-content($fa-var-tachometer-alt);
+  }
+  &-apps-built-icon:before {
+    content: fa-content($fa-var-rocket);
+  }
+}
+
+.kbts-site-footer {
+  display: grid;
+  grid-template-rows: auto auto;
+  color: #87969a;
+  font-size: 0.6em;
+  margin-bottom: 10px;
+
+  .kbts-site-footer-social {
+    @include fa-icon;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    grid-column-gap: 3px;
+    font-size: 1.5em;
+
+    &-fb-icon,
+    &-insta-icon,
+    &-twitter-icon,
+    &-linkedin-icon,
+    &-github-icon {
+      @extend .fab;
+    }
+
+    &-fb-icon:before {
+      content: fa-content($fa-var-facebook-square);
+    }
+    &-insta-icon:before {
+      content: fa-content($fa-var-instagram);
+    }
+    &-twitter-icon:before {
+      content: fa-content($fa-var-twitter-square);
+    }
+    &-linkedin-icon:before {
+      content: fa-content($fa-var-linkedin);
+    }
+    &-github-icon:before {
+      content: fa-content($fa-var-github-square);
+    }
+  }
+}
+
+.side-menu {
+  overflow: scroll;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  z-index: 2;
+  padding: 0 16px;
+  height: inherit;
+}
