@@ -1,6 +1,6 @@
 import Meta from '../meta'
 import Header from '../Header'
-import Footer from '@/components/Footer'
+import Footer from '@/components/footer'
 
 const Layout = ({ children }) => {
   return (
