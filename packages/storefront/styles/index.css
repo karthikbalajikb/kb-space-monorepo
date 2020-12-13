@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grayscale {
+  filter: grayscale(1);
+}
+
+@responsive {
+  .bg-gradient-trending {
+    background: linear-gradient(45deg, #ffb959, #ca5757);
+  }
+  .bg-gradient-new {
+    background: linear-gradient(45deg, #ef91d5, #f7c9ea);
+  }
+  .bg-gradient-offer {
+    background: linear-gradient(45deg, #31b369, #1fff13);
+  }
+}
