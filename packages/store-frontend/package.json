@@ -1,5 +1,5 @@
 {
-  "name": "cms-strapi",
+  "name": "@space/online-store",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
