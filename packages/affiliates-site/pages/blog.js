@@ -1,10 +1,16 @@
 import { useState } from 'react';
+import { NextSeo } from 'next-seo';
 
 import AppContainer from '@/components/AppContainer';
 import BlogPost from '@/components/BlogPost';
 import { getAllFilesFrontMatter } from '@/helpers/mdx';
 
-export default function Index({ posts }) {
+const url = 'https://kbtechspace.com/blog';
+const title = 'Blog – Karthik Balaji';
+const description =
+  'Thoughts on the Software Industry, Programming, UI/UX, Design System, Technology and my personal life.';
+
+export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState('');
   const filteredBlogPosts = posts
     .sort(
@@ -17,6 +23,16 @@ export default function Index({ posts }) {
 
   return (
     <AppContainer>
+      <NextSeo
+        title={title}
+        description={description}
+        canonical={url}
+        openGraph={{
+          url,
+          title,
+          description
+        }}
+      />
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
           Blog

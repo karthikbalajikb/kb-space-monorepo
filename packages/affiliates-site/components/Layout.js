@@ -4,7 +4,7 @@ export default function Layout({ children }) {
       <div className="wrapper">{children}</div>
       <style jsx>{`
         .wrapper {
-          max-width: 36rem;
+          max-width: 80rem;
           margin: 0 auto;
           padding: 1.5rem;
         }
