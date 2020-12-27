@@ -5,7 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build:affiliates-site": "cd packages/affiliates-site && yarn build"
+    "build:neumorphism-ui": "cd packages/neumorphism-ui && yarn build",
+    "build:affiliates-site": "yarn build:neumorphism-ui && cd packages/affiliates-site && yarn build"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
