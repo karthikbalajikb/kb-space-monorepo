@@ -4,6 +4,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "build:affiliates-site": "cd packages/affiliates-site && yarn build"
+  },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
