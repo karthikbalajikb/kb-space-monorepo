@@ -64,7 +64,7 @@ export default function Index({ allPosts, preview }) {
           <Category categories={categories} />
           <div className="mt-16" />
           <div className="flex flex-wrap justify-between">
-            {allPosts.map(product => (
+            {/* {allPosts.map(product => (
               <ProductCard
                 coverImage={`${
                     product.coverImage.url.startsWith('/') ? process.env.NEXT_PUBLIC_STRAPI_API_URL : ''
@@ -78,7 +78,7 @@ export default function Index({ allPosts, preview }) {
                 isNewArrival={product.isNewArrival}
                 isOffer={product.isOffer}
               />
-            ))}
+            ))} */}
             {/* <ProductCard
               coverImage="https://firebasestorage.googleapis.com/v0/b/kbtechspace-8907.appspot.com/o/product-images%2Ftartan-vintage-dress.png?alt=media&token=47fe450f-f583-4f24-93bc-d079248fb1f2"
               images={[]}
