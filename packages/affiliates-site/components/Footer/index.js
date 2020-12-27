@@ -59,7 +59,7 @@ const Footer = () => {
             </g>
           </svg>
         </ExternalLink>
-        <ExternalLink href="https://www.youtube.com/channel/UCZMli3czZnd1uoc1ShTouQw">
+        <ExternalLink href="https://www.youtube.com/channel/UCcbxh_2d47SRD_xmS4ZwqjA">
           <span className="sr-only">YouTube</span>
           <svg className="h-5 w-5" viewBox="0 0 24 24">
             <g
