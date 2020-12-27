@@ -1,7 +1,10 @@
 import { useState } from 'react';
 
+// components
 import AppContainer from '@/components/AppContainer';
 import BlogPost from '@/components/BlogPost';
+
+// utils
 import { getAllFilesFrontMatter } from '@/helpers/mdx';
 
 export default function Index({ posts }) {
@@ -19,11 +22,11 @@ export default function Index({ posts }) {
     <AppContainer>
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-          Blog
+          What To Look ?
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
-          {`I've been writing online since 2014, mostly about web development and tech careers.
-            In total, I've written ${posts.length} articles on this site.
+          {`What to look for will help you choose, validate, compare and think.
+            In total, We've written ${posts.length} articles on this site.
             Use the search below to filter by title.`}
         </p>
         <div className="relative w-full mb-4">
@@ -54,25 +57,11 @@ export default function Index({ posts }) {
             <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
               Most Popular
             </h3>
-            <BlogPost
-              title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
-              summary="A deep-dive on everything I've learned in the past year building style guides, design systems, component libraries, and their best practices."
-              slug="style-guides-component-libraries-design-systems"
-            />
-            <BlogPost
-              title="How Stripe Designs Beautiful Websites"
-              summary="Examining the tips and tricks used to make Stripe's website design a notch above the rest."
-              slug="how-stripe-designs-beautiful-websites"
-            />
-            <BlogPost
-              title="Creating a Monorepo with Lerna & Yarn Workspaces"
-              summary="In this guide, you will learn how to create a Monorepo to manage multiple packages with a shared build, test, and release process."
-              slug="monorepo-lerna-yarn-workspaces"
-            />
+            <h4 className="font-bold text-xl"> Coming Soon ....  </h4>
           </>
         )}
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
-          All Posts
+          All Articles
         </h3>
         {!filteredBlogPosts.length && 'No posts found.'}
         {filteredBlogPosts.map((frontMatter) => (

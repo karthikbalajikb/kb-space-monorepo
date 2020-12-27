@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="flex flex-col items-center mb-8">
       <div className="flex space-x-4 mb-4">
-        <ExternalLink href="https://twitter.com/karthik99">
+        <ExternalLink href="https://twitter.com/karthikbalaji99">
           <span className="sr-only">Twitter</span>
           <svg className="h-5 w-5" viewBox="0 0 24 24">
             <g
@@ -90,7 +90,7 @@ const Footer = () => {
           </svg>
         </ExternalLink>
       </div>
-      <div className="space-x-3">
+      {/* <div className="space-x-3">
         <Link href="/uses">
           <a className="text-sm text-gray-500 hover:text-gray-600">/uses</a>
         </Link>
@@ -102,7 +102,8 @@ const Footer = () => {
         <Link href="/snippets">
           <a className="text-sm text-gray-500 hover:text-gray-600">/snippets</a>
         </Link>
-      </div>
+      </div> */}
+      <div className="space-x-3 text-gray-600 text-sm">Designed and Developed by <a href="https://kbtechspace.com/">KB Techspace</a></div>
     </footer>
   );
 }
