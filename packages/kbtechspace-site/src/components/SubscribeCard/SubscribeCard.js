@@ -25,9 +25,19 @@ const SubscribeCard = () => {
     { status, isIdle, isLoading, isSuccess, isError, data, error, reset },
   ] = useMutation(
     async () => {
-      await fetch(
-        `https://us-central1-kbtechspace-8907.cloudfunctions.net/addSubscriber?email=${email}&tag=blog`
-      )
+      let formData = new FormData()
+      formData.append('email_address', email)
+      formData.append('fields[first_name]', email)
+      formData.append('user', 'cbf5feef-2284-4cdf-ab10-24b582418030')
+
+      await fetch('https://app.convertkit.com/forms/1918616/subscriptions', {
+        method: 'POST',
+        header: { 'content-type': 'multipart/form-data' },
+        body: formData,
+      })
+      // await fetch(
+      //   `https://us-central1-kbtechspace-8907.cloudfunctions.net/addSubscriber?email=${email}&tag=blog`
+      // )
     },
     {
       onSuccess: data => {
