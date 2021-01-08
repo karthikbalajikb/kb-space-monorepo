@@ -74,7 +74,7 @@ const Footer = () => {
             </g>
           </svg>
         </ExternalLink>
-        <ExternalLink href="mailto:karthik.akb009@gmail.com">
+        <ExternalLink href="mailto:hello@kbtechspace.com">
           <span className="sr-only">Email</span>
           <svg className="h-5 w-5" viewBox="0 0 24 24">
             <g

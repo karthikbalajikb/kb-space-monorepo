@@ -10,6 +10,8 @@ packages/**/node_modules
 
 # Build directory
 /public
+packages/kbtechspace-site/public
+
 .DS_Store
 # Local Netlify folder
 .netlify
