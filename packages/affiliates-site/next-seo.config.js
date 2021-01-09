@@ -1,20 +1,20 @@
-const title = 'Karthik Balaji – Developer, writer, creator.';
+const title = 'What To Look – Helps you what to look when buying, starting things';
 const description =
-  'Front-end developer, JavaScript, UI/UX enthusiast.';
+  'Helps you what to look when buying, starting things - Electronics, Lifestyle, Health, Startups, Tech';
 
 const SEO = {
   title,
   description,
-  canonical: 'https://kbtechspace.com',
+  canonical: 'https://whattolook.com',
   openGraph: {
     type: 'website',
     locale: 'en_IE',
-    url: 'https://kbtechspace.com',
+    url: 'https://whattolook.com',
     title,
     description,
     images: [
       {
-        url: 'https://kbtechspace.com/logos/logo.png',
+        url: 'https://whattolook.com/logos/favicons/vision.svg',
         alt: title,
         width: 1280,
         height: 720
@@ -22,8 +22,8 @@ const SEO = {
     ]
   },
   twitter: {
-    handle: '@karthikbalaji99',
-    site: '@karthikbalaji99',
+    handle: '@_WhatToLook',
+    site: '@_WhatToLook',
     cardType: 'summary_large_image'
   }
 };

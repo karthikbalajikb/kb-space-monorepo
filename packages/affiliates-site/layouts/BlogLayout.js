@@ -4,18 +4,16 @@ import { parseISO, format } from 'date-fns';
 import AppContainer from '@/components/AppContainer';
 import BlogSeo from '@/components/BlogSeo';
 
-const editUrl = (slug) =>
-  `https://github.com/edit/master/data/blog${slug}.mdx`;
 const discussUrl = (slug) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `https://kbtechspace.com/blog${slug}`
+    `https://whattolook.com/blog/${slug}`
   )}`;
 
 const BlogLayout = ({ children, frontMatter }) => {
   return (
     <AppContainer>
       <BlogSeo
-        url={`https://kbtechspace.com/blog/${frontMatter.slug}`}
+        url={`https://whattolook.com/blog/${frontMatter.slug}`}
         {...frontMatter}
       />
       <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
@@ -52,14 +50,6 @@ const BlogLayout = ({ children, frontMatter }) => {
             rel="noopener noreferrer"
           >
             {'Discuss on Twitter'}
-          </a>
-          {` • `}
-          <a
-            href={editUrl(frontMatter.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'Edit on GitHub'}
           </a>
         </div>
       </article>
