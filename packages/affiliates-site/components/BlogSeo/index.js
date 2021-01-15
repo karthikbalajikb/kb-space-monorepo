@@ -30,7 +30,7 @@ const BlogSeo = ({ title, summary, publishedAt, url, image, by  }) => {
         datePublished={date}
         description={summary}
         images={[featuredImage]}
-        publisherLogo="/logos/favicons/vision.svg"
+        publisherLogo="/logos/favicons/WhatToLookLogo.png"
         publisherName="What To Look"
         title={title}
         url={url}

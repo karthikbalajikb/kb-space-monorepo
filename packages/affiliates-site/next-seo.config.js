@@ -14,10 +14,10 @@ const SEO = {
     description,
     images: [
       {
-        url: 'https://whattolook.com/logos/favicons/vision.svg',
+        url: 'https://whattolook.com/icons/WhatToLookLogo.png',
         alt: title,
-        width: 1280,
-        height: 720
+        width: 500,
+        height: 500
       }
     ]
   },
