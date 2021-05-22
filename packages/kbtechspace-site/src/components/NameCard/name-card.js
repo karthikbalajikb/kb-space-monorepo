@@ -15,7 +15,7 @@ const NameCard = props => (
     </p>
     <p className="kbts-name-card-text-4 animated expand">
       <Angle size="1rem">&lt;</Angle>
-      {props.text_3}
+      <Interest>{props.text_3}</Interest>
       <Angle size="1rem">/&gt;</Angle>
     </p>
     <p className="kbts-name-card-text-4 animated expand">
@@ -46,3 +46,9 @@ const Letter = styled.p`
   font-weight: 900;
   margin-bottom: 0;
 `
+
+const Interest = styled.p`
+  font-size: 1rem;
+  color: var(--secondary-main);
+  margin-bottom: 0;
+`;

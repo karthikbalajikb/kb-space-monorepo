@@ -15,7 +15,7 @@ const AppContainer = ({ children }) => {
     <div className="bg-white dark:bg-black">
       <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto bg-white dark:bg-black bg-opacity-60">
         <NextLink href="/">
-          <img src="/icons/vision.svg" alt="what to look" />
+          <img src="/icons/WhatToLook.svg" alt="what to look" />
         </NextLink>
 
         <div>
@@ -33,7 +33,7 @@ const AppContainer = ({ children }) => {
           <NextLink href="/">
             <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">Home</a>
           </NextLink>
-          <button
+          {/* <button
             aria-label="Toggle Dark Mode"
             type="button"
             className="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10"
@@ -57,7 +57,7 @@ const AppContainer = ({ children }) => {
                 )}
               </svg>
             )}
-          </button>
+          </button> */}
         </div>
       </nav>
       <main className="flex flex-col justify-center bg-white dark:bg-black px-8">

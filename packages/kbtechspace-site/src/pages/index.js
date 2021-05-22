@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
-import { Button } from '@space/neumorphism-ui';
 
 import wallpaperSVG from '../../assets/development-animate.svg'
 import Layout from '../components/Layout/Layout'
@@ -18,7 +17,6 @@ const IndexPage = () => (
         text_4="UI/UX Enthusiasts"
         text_5="Tech Bloggers"
       />
-      <Button label="demo" />
       <WallpaperWrapper className="animated opening">
         <StyledWallpaper src={wallpaperSVG} alt="kb-wallpaper" />
       </WallpaperWrapper>
